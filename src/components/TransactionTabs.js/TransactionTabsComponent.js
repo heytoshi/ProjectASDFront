@@ -18,6 +18,7 @@ const TransactionTabsComponent = () => {
   const handleTabChange = (tab) => {
     resetInfiniteScroll();
     setActiveTab(tab);
+    console.log(page)
   };
 
   const resetInfiniteScroll = () => {
@@ -80,7 +81,7 @@ const TransactionTabsComponent = () => {
     if (contentHeight < window.innerHeight) {
       setPage(0);
     }
-  }, []);
+  }, [page]);
 
   useEffect(() => {
     resetInfiniteScroll();
@@ -89,6 +90,7 @@ const TransactionTabsComponent = () => {
     } else if (activeTab === "received") {
       fetchMyTransactions();
     }
+    // eslint-disable-next-line
   }, [activeTab]);
 
   const updatedDataTran = (updatedTransaction) => {

@@ -59,7 +59,7 @@ const MyTransactionsComponent = ({ id, approvalDate, pendingDate, completionDate
         <p className="transaction-status">Status: {status}</p>
       </div>
       <div className="transaction-owner">
-        {status === 'PENDING' && borrower != username ? (
+        {status === 'PENDING' && borrower !== username ? (
           <>
             <button className="approve-button" onClick={handleApprove}>Approve</button>
             <button className="reject-button" onClick={handleReject}>Reject</button>

@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import "./MyBookComponent.css";
 import axios from "axios";
 
@@ -82,7 +82,7 @@ const MyBookComponent = ({ id, title, author, genre, publisher, description, yea
         <p className="book-status">Status: {status}</p>
       </div>
       <div className="book-owner">
-        {status == "AVAILABLE" ?
+        {status === "AVAILABLE" ?
           <> 
             <button className="update-button" onClick={() => setShowUpdateBookPopup(true)}>Update</button>
             <button className="delete-button" onClick={handleDeleteBook}>Delete</button>

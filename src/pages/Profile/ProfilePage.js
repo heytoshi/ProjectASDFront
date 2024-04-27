@@ -9,6 +9,7 @@ import TransactionTabsComponent from "../../components/TransactionTabs.js/Transa
 const ProfilePage = () => {
   const [activeTab, setActiveTab] = useState("books");
   const [bookList, setBookList] = useState([]);
+  // eslint-disable-next-line
   const [page, setPage] = useState(1);
 
   const contentRef = useRef(null);
@@ -30,6 +31,7 @@ const ProfilePage = () => {
   };
 
   const [showAddBookPopup, setShowAddBookPopup] = useState(false);
+  // eslint-disable-next-line
   const [newBook, setNewBook] = useState({
     title: "",
     author: "",

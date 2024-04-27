@@ -41,6 +41,7 @@ const HomePage = () => {
 
   useEffect(() => {
     fetchBooks(false);
+    // eslint-disable-next-line
   }, [page]);
 
 
