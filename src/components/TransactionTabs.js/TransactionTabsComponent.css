@@ -1,0 +1,41 @@
+.tab {
+    font-size: 20px;
+    padding: 10px 60px;
+    cursor: pointer;
+    opacity: 0.6;
+    background: transparent;
+    color: white;
+    border: 0;
+    font-weight: bold;
+    outline: 0;
+}
+
+.tab.active {
+    border-bottom: 5px solid rgb(29, 155, 240);
+    opacity: 1;
+}
+
+.transaction-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    border-bottom: 1px solid white;
+}
+
+
+.mybook-main-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+.mybook-main-content::-webkit-scrollbar {
+    width: 5px;
+    background-color: #555;
+
+}
+
+.mybook-main-content::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+}
